@@ -1,19 +1,109 @@
-.about {
-    background: #00b3d1;
+/* General Styling */
+body{
+    background: navy;
+    font-family:"Times New Roman", Times, serif;
+    margin: 40px;
 }
+
+h1 {
+    text-align: center;
+    color: silver;
+}
+
+h1:hover{  
+    color:silver;
+    text-decoration: overline underline;
+    text-underline-offset: 5px;
+}
+
+/* Project Styling */
+
+h3 {
+    text-align: center;
+    font-style: italic;
+}
+
+.projects{
+    display:flex;
+    flex-wrap:wrap;
+}
+.project{
+    width:30%;
+    margin: 10px;
+    padding: 20px 10px;
+    background: navy;
+    border-radius: 7%;
+}
+
 .project img{
     width: 300px;
     height: 300px;
     margin: 10px;
-    border: 2px solid rgb(126, 14, 201); /* choose a color */
+    border: 2px solid grey;
     display: block;
     margin: auto;
 }
-a {  /* change the appearance of ALL links */
-    text-decoration: none;
-    color: purple;
+
+.project img:hover{
+    border: 2px solid white;
 }
-.project p {  /* change the appearance of paragraph tags inside .project divs */
+
+a{
+    text-decoration: none;
+    color: navy;
+}
+
+.project a:hover{
+    color: white;
+}
+
+.project p {
     text-align: center;
     margin: 15px;
+}
+
+/* About Section Styling */
+
+.about{
+    display:flex;
+    flex-wrap:wrap;
+    margin-right: 100px;
+    margin-left: 100px;
+    justify-content: center;
+}
+
+.about img {
+    width: 150px;
+    height: 200px;
+    border-radius: 25%;
+    border: 2px solid navy;
+}
+
+.about p {
+    width:50%;
+    text-align: center;
+    margin: auto;
+    line-height: 125%;
+}
+
+
+/* Skills Section Styling */
+.skills {
+    margin: 40px;
+}
+
+/* Contact Section Styling */
+.contact{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.contact a {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.contact a:hover {
+    text-decoration: underline;
 }
