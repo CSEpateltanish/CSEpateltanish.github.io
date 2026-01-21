@@ -16,3 +16,16 @@ p {
     font-family: verdana;
     font-size: 20px;
 }
+div {
+    display: flex;
+    justify-content: center;
+}
+  
+img {
+    width: 50%;
+}
+tr:nth-child(even) {background-color: lightgrey;}
+th, td {
+    border-bottom: 1px solid #ddd;
+    font-family: verdana;
+}
