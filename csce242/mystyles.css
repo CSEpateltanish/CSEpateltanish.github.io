@@ -1,10 +1,6 @@
 body{
     background-color: #11254a;
 }
-a {
-    color: white;
-    font-weight: bold;
-  }
 h1 {
     color: white;
     text-align: center;
@@ -28,7 +24,7 @@ p {
 div {
     display: grid;
      place-items: center;
-     height: auto;
+     height: 1200px;
      border: 1px solid white;
     padding-right: 30px;
     padding-bottom: 10px;
@@ -41,4 +37,17 @@ img{
 ul li {
     color: white;
     margin: 5px;
-  }
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Lucida Handwriting", cursive;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
