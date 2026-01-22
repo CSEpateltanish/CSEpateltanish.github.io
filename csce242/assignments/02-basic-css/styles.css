@@ -1,5 +1,5 @@
 body{
-    background-color: #0F69F0;
+    background-color: crimson;
 }
 table {
     border-collapse: collapse;
@@ -24,11 +24,13 @@ div {
      place-items: center;
      height: 1700px;
      border: 1px solid white;
-     margin-right: 150px;
-     margin-left: 150px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
    }
 img {
-     width: 50%;
+     width: 60%;
+    border-radius: 18px;
 }
 tr:nth-child(even) {background-color: gray;}
 th, td {
