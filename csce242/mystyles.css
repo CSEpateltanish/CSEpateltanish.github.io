@@ -8,20 +8,20 @@ a {
 h1 {
     color: white;
     text-align: center;
-    font-family: "Courier New", Courier, monospace;
+    font-family: Garamond;
 }
 h2 {
     color: white;
     text-align: center;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Lucida Handwriting", cursive;
 }
 h3 {
     color: white;
     text-align: center;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Lucida Handwriting", cursive;
 }
 p {
-    font-family: georgia;
+    font-family: Garamond;
     font-size: 20px;
     color: lightgray;
 }
@@ -36,6 +36,7 @@ div {
 }
 img{
     width: 50%;
+    height: auto;
 }
 ul li {
     color: white;
