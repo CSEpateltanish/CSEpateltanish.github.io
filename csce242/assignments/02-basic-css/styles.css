@@ -17,13 +17,16 @@ p {
     font-size: 20px;
 }
 div {
-     place-items: center;
-     display: flex;
-     justify-content: center;
-   }
-img {
-     width: 50%;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    border: 1px solid black;
+  }
+  
+  img {
+    width: 50%;
+  }
 tr:nth-child(even) {background-color: lightgrey;}
 th, td {
     border-bottom: 1px solid #ddd;
