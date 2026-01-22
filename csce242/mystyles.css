@@ -3,7 +3,6 @@ body{
 }
 a {
     color: white;
-    background-color: gray;
     font-weight: bold;
   }
 h1 {
@@ -29,7 +28,7 @@ p {
 div {
     display: grid;
      place-items: center;
-     height: 700px;
+     height: 1000px;
      border: 1px solid white;
     padding-right: 30px;
     padding-bottom: 10px;
@@ -39,7 +38,6 @@ img{
     width: 50%;
 }
 ul li {
-    background: gray;
     color: white;
     margin: 5px;
   }
