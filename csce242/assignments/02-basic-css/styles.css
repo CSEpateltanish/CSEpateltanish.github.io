@@ -13,14 +13,13 @@ h2 {
     text-align: center;
 }
 p {
-    font-family: verdana;
+    font-family: georgia;
     font-size: 20px;
 }
 div {
-    display: grid;
      place-items: center;
-     height: 600px;
-     border: 1px solid black;
+     display: flex;
+     justify-content: center;
    }
 img {
      width: 50%;
@@ -28,5 +27,5 @@ img {
 tr:nth-child(even) {background-color: lightgrey;}
 th, td {
     border-bottom: 1px solid #ddd;
-    font-family: verdana;
+    font-family: georgia;
 }
