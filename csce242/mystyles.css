@@ -28,7 +28,7 @@ p {
 div {
     display: grid;
      place-items: center;
-     height: 1200px;
+     height: auto;
      border: 1px solid white;
     padding-right: 30px;
     padding-bottom: 10px;
