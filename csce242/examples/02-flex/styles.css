@@ -11,6 +11,21 @@ body {
 
 #main-header {
     background:#ffafcc;
+    position: relative;
+}
+
+#logo {
+    margin: 10px;
+}
+
+#login-nav {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+#login-nav li:not(:last-child) ::after {
+    content:" | "
 }
 
 #content {
@@ -23,6 +38,47 @@ body {
 
 #main-footer {
 
+}
+
+/*Square */
+.arrow {
+    font-size:1.5em;
+    color:white;
+    position: absolute;
+    top:35%;
+}
+
+#prev {
+    left: 5%;
+}
+
+#next {
+    right: 5%;
+}
+
+#slide-desc {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    background: gray;
+    color: white;
+    padding: 5px;
+    max-width: 40%;
+}
+
+.area{
+    position:relative;
+}
+#square {
+    width:100px;
+    height:100px;
+    color:lightsalmon;
+
+    /* absolute positon is in referance to the upper left hand corner */
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    
 }
 
 /* Gallery */
@@ -47,19 +103,25 @@ body {
     margin:auto;
 }
 
+/* Area */
+.area {
+    width: 49%;
+    background:#cdb4db;
+}
+
 /* Navigation */
-#main-nav ul {
+nav ul {
     padding-left:0;     /* Remove indentation */
 }
 
-#main-nav li {
+nav li {
     list-style-type:none;   /* Remove bullet */
     background:#ffc8dd;
     padding:5px;
     border-bottom:1px solid #cdb4db;;
 }
 
-#main-nav a {
+nav a {
     text-decoration: none;  /* Remove underline */
 }
 
@@ -71,6 +133,11 @@ body {
 
 /* Larger devices */
 @media (min-width: 768px) {
+    #content {
+        justify-content: space-between;
+        gap: 1em;
+    }
+
     .columns {
         display:flex;
     }
@@ -91,21 +158,21 @@ body {
         flex:4;
     }
 
-    #main-nav ul {
+    nav ul {
         display:flex;
     }
 
-    #main-nav li {
+    nav li {
         background:transparent;
         flex:1;
     }
 
-    #main-nav a {
+    nav a {
         color: darkslateblue;
         border-bottom:1px solid transparent;
     }
 
-    #main-nav a:hover {
+    nav a:hover {
         border-bottom:1px solid darkslateblue;
     }
 
