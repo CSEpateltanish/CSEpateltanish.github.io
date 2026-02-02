@@ -11,25 +11,11 @@ body {
 
 #main-header {
     background:#ffafcc;
-    position: relative;
+    position:relative;
 }
 
-#logo {
-    margin: 10px;
-}
-
-#login-nav {
-    position: absolute;
-    right: 5%;
-    top: 5%;
-}
-
-#login-nav li:not(:last-child) ::after {
-    content:" | "
-}
-
-#content {
-
+#container{
+    background-color: black;
 }
 
 #sidebar {
@@ -40,45 +26,68 @@ body {
 
 }
 
-/*Square */
+/* Header */
+#logo {
+    margin:10px;
+}
+
+#login-nav {
+    position:absolute;
+    right:5%;
+    top:5%;
+}
+
+#login-nav li:not(:last-child)::after {
+    content:" |";
+}
+
+
+
+/* Images */
+img {
+    max-width:100%;
+}
+
+/* Square */
+.area {
+    background:#cdb4db;
+    position:relative;
+}
+
 .arrow {
     font-size:1.5em;
     color:white;
-    position: absolute;
-    top:35%;
+    position:absolute;
+    top:32%;
 }
 
 #prev {
-    left: 5%;
+    left:5%;
 }
 
 #next {
-    right: 5%;
+    right:5%;
 }
 
 #slide-desc {
-    position: absolute;
-    bottom: 10%;
-    left: 5%;
-    background: gray;
-    color: white;
-    padding: 5px;
-    max-width: 40%;
+    position:absolute;
+    bottom:5%;
+    left:5%;
+    background:rgba(255,255,255, 0.8);
+    padding:5px;
+    max-width:40%;
 }
 
-.area{
-    position:relative;
-}
 #square {
     width:100px;
     height:100px;
-    color:lightsalmon;
+    background:lightsalmon;
 
-    /* absolute positon is in referance to the upper left hand corner */
-    position: absolute;
-    top: 100px;
-    left: 80px;
-    
+    /* Postition absolute is in respect to the upper left hand corner */
+
+    position:absolute;
+    top:50px;
+    left:50px;
 }
 
 /* Gallery */
@@ -101,12 +110,6 @@ body {
 .item img {
     display:block;
     margin:auto;
-}
-
-/* Area */
-.area {
-    width: 49%;
-    background:#cdb4db;
 }
 
 /* Navigation */
@@ -135,12 +138,12 @@ nav a {
 @media (min-width: 768px) {
     #content {
         justify-content: space-between;
-        gap: 1em;
+        gap:1em;
     }
 
     .columns {
         display:flex;
-    }
+    }    
 
     .one {
         flex:1;
