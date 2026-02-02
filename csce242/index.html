@@ -1,20 +1,84 @@
 <!DOCTYPE html>
-<html>
-    <link rel="stylesheet" href="mystyles.css"/>
-    <title>
-        CSCE242
-    </title>
-    <body>
-        <div>
-            <h1>CSCE242</h1>
-            <h2>Tanish Patel</h2>
-            <p>In this class, I will be designing my own webpage where I will show off my personal photography portfolio.</p>
-            <img src="images/a7.png" alt="Sony A7 III" width="400" height="400">
-            <h3>Assignments</h3>
-            <ul>
-                <li><a href="assignments/01-basic-html/index.html">Basic Html</a></li>
-                <li><a href="assignments/02-basic-css/index.html">Basic CSS</a></li>
-            </ul>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanish Patel: CSCE242</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- header -->
+  <header class="header">
+    <div class="header_bg">
+        <img src="images/space.jpg" alt="header_img">
+    </div>
+
+    <div class="header_content">
+      <h1>CSCE242</h1>
+      <p>Web Design</p>
+      <p>Tanish Patel</p>
+      <br>
+      <p>This course focuses on building modern websites using foundational web technologies. We learn how to structure pages with HTML, style them with CSS, and add interaction using JavaScript. Assignments are published through GitHub Pages and this link is posted in blackboard.</p>
+    </div>
+  </header>
+
+  <!-- repo link -->
+  <div class="repobar">
+    <div class="repolink"><a href="https://github.com/CSEpateltanish/CSEpateltanish.github.io/tree/main/csce242">Github Repo Link</a></div>
+    <div class="assign-bar">Assignments:</div>
+  </div>
+
+  <!-- assignments grid -->
+  <main class="page">
+    <section class="grid">
+      <a class="card" href="assignments/01-basic-html/index.html">
+        <div class="card_img">
+            <img src="images/AS1.jpeg" alt="Assignment 1">
         </div>
-    </body>
+        <div class="card_title">Assignment 1</div>
+      </a>
+
+      <a class="card" href="assignments/02-basic-css/index.html">
+        <div class="card_img">
+            <img src="images/AS2.jpeg" alt="Assignment 2">
+        </div>
+        <div class="card_title">Assignment 2</div>
+      </a>
+
+      <a class="card" href="assignments/03-page-layout/index.html">
+        <div class="card_img">
+            <img src="images/AS3.jpeg" alt="Assignment 4">
+        </div>
+        <div class="card_title">Assignment 3</div>
+      </a>
+
+      <a class="card" href="assignments/04-css-recreation/index.html">
+        <div class="card_img">
+            <img src="images/AS4.jpeg" alt="Assignment 4">
+        </div>
+        <div class="card_title">Assignment 4</div>
+      </a>
+    </section>
+  </main>
+
+  <!-- projects section -->
+  <section class="projects">
+    <div class="projects_bar">
+      <div class="projects-title">Projects:</div>
+    </div>
+
+    <div class="projects_content">
+      <a class="project-card" href="#">
+        <div class="project-card_title">Project 01</div>
+        <div class="project-card_img"></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    © Tanish Patel | 2026
+  </footer>
+
+</body>
 </html>
