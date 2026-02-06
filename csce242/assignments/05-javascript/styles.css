@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #eef1f6;
+    color: #0b1f3a;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Page layout */
+.page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 24px 48px;
+}
+
+/* Title styling */
+.page-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #0b2d66;
+}
+
+.page-header h2 {
+    font-size: 28px;
+    margin: 8px 0 0;
+    color: #1d4f9b;
+    font-weight: 600;
+}
+
+/* grid layout */
+.panel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+/* card styling */
+.panel {
+    position: relative;
+    background: #f7f9fd;
+    border: 2px solid #c7d4ea;
+    border-radius: 16px;
+    padding: 26px 24px 30px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+}
+
+.panel h3 {
+    margin: 0;
+    color: #0b2d66;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Three-dot decoration */
+.panel-dots {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    color: #8fa4c5;
+    font-size: 20px;
+}
+
+/* Clickable panel */
+.panel-clickable {
+    cursor: pointer;
+}
+
+/* CSS triangle */
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 130px solid #0b2d66;
+    display: none;
+}
+
+.triangle.is-visible {
+    display: block;
+}
+
+/* Date picker styling */
+#date-panel {
+    align-items: flex-start;
+    text-align: left;
+}
+
+#date-panel h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.date-input {
+    width: 100%;
+}
+
+input[type="date"] {
+    width: 70%;
+    min-width: 160px;
+    padding: 6px 8px;
+    border: 2px solid #c7d4ea;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+    background: #fff;
+    color: #0b1f3a;
+}
+
+.date-output {
+    margin: 6px 0 0;
+    color: #0b2d66;
+    font-weight: 600;
+    min-height: 24px;
+    display: none;
+}
+
+.date-output.is-visible {
+    display: block;
+}
+
+/* Image frame styling */
+.image-frame {
+    width: 100%;
+    max-width: 240px;
+    padding: 16px;
+    border-radius: 14px;
+    background: #ffffff;
+    border: 2px solid #c7d4ea;
+}
+
+.image-frame.frame-on {
+    border-width: 6px;
+    border-style: solid;
+    border-top-color: #0b2d66;
+    border-right-color: #1d4f9b;
+    border-bottom-color: #244f7a;
+    border-left-color: #5b7bb3;
+}
+
+/* Sun image */
+#sun-image {
+    cursor: pointer;
+    border-radius: 10px;
+    filter: grayscale(25%) brightness(0.92);
+}
+
+#sun-image.is-sunny {
+    filter: none;
+}
+
+/* Footer label */
+.page-footer {
+    margin-top: 28px;
+    text-align: center;
+    color: #0b2d66;
+    font-weight: 600;
+}
+
+/* Mobile layout */
+@media (max-width: 900px) {
+    .page-header h1 {
+        font-size: 40px;
+    }
+
+    .page-header h2 {
+        font-size: 24px;
+    }
+
+    .panel-grid {
+        grid-template-columns: 1fr;
+    }
+
+    input[type="date"] {
+        width: 100%;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 5 - JavaScript</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width"/>
+    </head>
+    <body>
+        <main class="page">
+            <header class="page-header">
+                <h1>Assignment 5</h1>
+                <h2>Introduction to JavaScript</h2>
+            </header>
+            <section class="panel-grid">
+                <!-- triangle -->
+                <section class="panel panel-clickable" id="geometry-panel">
+                    <span class="panel-dots">•••</span>
+                    <h3>Geometry</h3>
+                    <div class="triangle" id="triangle"></div>
+                </section>
+                <!-- Date picker -->
+                <section class="panel" id="date-panel">
+                    <span class="panel-dots">•••</span>
+                    <h3>Select A Date:</h3>
+                    <div class="date-input">
+                        <input type="date" id="date-picker" aria-label="Select a date">
+                    </div>
+                    <p class="date-output" id="date-output" aria-live="polite"></p>
+                </section>
+                <!-- sun frame -->
+                <section class="panel" id="image-panel">
+                    <span class="panel-dots">•••</span>
+                    <h3>Frame Image</h3>
+                    <div class="image-frame" id="image-frame">
+                        <img src="images/sun_05.png" alt="Smiling sun illustration" id="sun-image">
+                    </div>
+                </section>
+            </section>
+            <footer class="page-footer">CSEpateltanish.github.io/csce242/</footer>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
