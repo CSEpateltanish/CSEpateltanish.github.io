@@ -17,7 +17,7 @@
   }
 
   a:hover {
-    color: #d51616;
+    color: #000591;
   }
 
   img {
@@ -229,7 +229,7 @@
   
   .project-card_img {
     width: 100px;
-    height: 240px;
+    height: 140px;
     background: #e9e9e9;
     border: 1px solid #dedede;
     border-radius: 8px;
