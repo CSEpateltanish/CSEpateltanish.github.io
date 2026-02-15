@@ -1,0 +1,449 @@
+/* Color variables used across the page */
+:root {
+  --page-bg: #ededf0;
+  --frame-bg: #ffffff;
+  --frame-border: #6d6d6d;
+  --section-bg: #dddde0;
+  --primary-blue: #072a83;
+  --link-blue: #1a43a2;
+  --chip-bg: #ecebf2;
+  --chip-border: #c8c8d1;
+  --text: #121212;
+  --footer-text: #767676;
+  --shadow: rgba(0, 0, 0, 0.2);
+}
+
+/* Base layout and main page container */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-frame {
+  width: 100%;
+  margin: 0;
+  border-top: 1px solid var(--frame-border);
+  border-bottom: 1px solid var(--frame-border);
+  background: var(--frame-bg);
+}
+
+/* Header row with logo/title on the left and nav on the right */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 34px 30px;
+  background: var(--frame-bg);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.camera-icon {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+}
+
+.brand-title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.2px;
+}
+
+.brand-title span {
+  font-size: 30px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+}
+
+.main-nav a {
+  color: var(--link-blue);
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+/* Gallery area with filter chips and 3-column image box grid */
+.gallery-section {
+  background: var(--section-bg);
+  padding: 42px 34px 18px;
+}
+
+.gallery-section h2 {
+  margin: 0 0 16px;
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.gallery-section > p {
+  margin: 0;
+  max-width: 1120px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.filter-chips {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.filter-chips button {
+  border: 2px solid var(--chip-border);
+  border-radius: 999px;
+  background: var(--chip-bg);
+  color: var(--link-blue);
+  font-size: 17px;
+  font-weight: 700;
+  padding: 10px 22px;
+  box-shadow: 0 4px 6px var(--shadow);
+  cursor: pointer;
+}
+
+.filter-chips button.is-active {
+  background: var(--primary-blue);
+  color: #ffffff;
+  border-color: var(--primary-blue);
+}
+
+.gallery-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 48px 44px;
+}
+
+.gallery-box {
+  background: var(--primary-blue);
+  width: 100%;
+  height: 290px;
+  overflow: hidden;
+}
+
+.gallery-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.portfolio-button {
+  margin: 46px auto 0;
+  display: block;
+  width: 120px;
+  text-align: center;
+  border: 2px solid var(--chip-border);
+  border-radius: 999px;
+  background: var(--chip-bg);
+  color: var(--link-blue);
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 10px 24px;
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+.portfolio-note {
+  margin: 56px 0 24px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Contact block, footer styling, and responsive breakpoints */
+.contact-section {
+  background: var(--frame-bg);
+  padding: 50px 54px 52px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 52px;
+  align-items: center;
+}
+
+.avatar-placeholder {
+  width: 252px;
+  height: 252px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  justify-self: center;
+}
+
+.contact-copy h3 {
+  margin: 0 0 20px;
+  font-size: 52px;
+  line-height: 1.1;
+}
+
+.contact-intro {
+  margin: 0 0 22px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.28;
+}
+
+.contact-row {
+  margin: 18px 0 0;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 36px 20px 38px;
+  color: var(--footer-text);
+  font-size: 22px;
+  font-weight: 500;
+  background-color: #e9e9eb;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.48) 1px, transparent 1px),
+    radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-position: 0 0, 1px 1px;
+  background-size: 3px 3px;
+}
+
+@media (max-width: 1300px) {
+  .brand-title {
+    font-size: 36px;
+  }
+
+  .brand-title span {
+    font-size: 28px;
+  }
+
+  .main-nav a {
+    font-size: 19px;
+  }
+
+  .gallery-section h2 {
+    font-size: 42px;
+  }
+
+  .gallery-section > p {
+    font-size: 22px;
+  }
+
+  .filter-chips button {
+    font-size: 16px;
+    padding: 9px 18px;
+  }
+
+  .portfolio-button {
+    font-size: 16px;
+    padding: 9px 18px;
+  }
+
+  .portfolio-note {
+    font-size: 18px;
+  }
+
+  .contact-copy h3 {
+    font-size: 42px;
+  }
+
+  .contact-intro {
+    font-size: 22px;
+  }
+
+  .contact-row {
+    font-size: 18px;
+  }
+
+  .site-footer {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 22px;
+  }
+
+  .brand-title {
+    font-size: 28px;
+  }
+
+  .brand-title span {
+    font-size: 22px;
+  }
+
+  .main-nav {
+    gap: 26px;
+  }
+
+  .main-nav a {
+    font-size: 18px;
+  }
+
+  .gallery-section {
+    padding: 26px 22px 16px;
+  }
+
+  .gallery-section h2 {
+    font-size: 34px;
+  }
+
+  .gallery-section > p {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .filter-chips {
+    margin-top: 28px;
+    gap: 10px;
+  }
+
+  .filter-chips button {
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+
+  .gallery-grid {
+    margin-top: 30px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .portfolio-button {
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 8px 18px;
+  }
+
+  .portfolio-note {
+    margin: 34px 0 14px;
+    font-size: 16px;
+  }
+
+  .contact-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 34px 22px 38px;
+  }
+
+  .avatar-placeholder {
+    width: 210px;
+    height: 210px;
+  }
+
+  .contact-copy h3 {
+    font-size: 38px;
+  }
+
+  .contact-intro {
+    font-size: 20px;
+  }
+
+  .contact-row {
+    font-size: 18px;
+  }
+
+  .site-footer {
+    font-size: 18px;
+    padding: 22px 14px 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .brand {
+    gap: 14px;
+  }
+
+  .camera-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .brand-title {
+    font-size: 22px;
+  }
+
+  .brand-title span {
+    font-size: 17px;
+  }
+
+  .main-nav {
+    gap: 16px;
+  }
+
+  .main-nav a {
+    font-size: 15px;
+  }
+
+  .gallery-section h2 {
+    font-size: 30px;
+  }
+
+  .gallery-section > p {
+    font-size: 17px;
+  }
+
+  .filter-chips button {
+    font-size: 14px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-button {
+    font-size: 14px;
+  }
+
+  .portfolio-note {
+    font-size: 15px;
+  }
+
+  .contact-copy h3 {
+    font-size: 32px;
+  }
+
+  .contact-intro {
+    font-size: 18px;
+  }
+
+  .contact-row {
+    font-size: 16px;
+  }
+
+  .contact-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .site-footer {
+    font-size: 16px;
+  }
+}
