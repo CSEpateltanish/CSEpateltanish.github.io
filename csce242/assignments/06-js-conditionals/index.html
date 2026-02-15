@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 6 - JS Conditionals</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width" />
+    </head>
+    <body>
+        <main class="page">
+            <section class="assignment-card">
+                <span class="panel-dots">•••</span>
+
+                <header class="page-header">
+                    <h1>Assignment 6</h1>
+                    <h2>If Statements</h2>
+                </header>
+
+                <nav class="exercise-nav">
+                    <button class="toggle-nav" id="toggle-nav" type="button">
+                        <span id="toggle-arrow">▼</span>
+                    </button>
+                    <ul class="exercise-list hide-small" id="exercise-list">
+                        <li><button class="exercise-link is-active" type="button" data-view="exercise-1">Exercise 1</button></li>
+                        <li><button class="exercise-link" type="button" data-view="exercise-2">Exercise 2</button></li>
+                    </ul>
+                </nav>
+
+                <section class="content-panel">
+                    <section class="exercise-view" id="exercise-1">
+                        <h3>How many minutes until class?</h3>
+                        <div class="slider-row">
+                            <input type="range" id="minutes-slider" min="0" max="60" value="24">
+                        </div>
+                        <p class="value-text" id="minutes-value">24 minutes</p>
+                        <p class="message-text" id="exercise-1-message"></p>
+                    </section>
+
+                    <section class="exercise-view hidden" id="exercise-2">
+                        <h3>Countdown till class</h3>
+                        <p class="value-text" id="countdown-value"></p>
+                        <p class="message-text" id="exercise-2-message"></p>
+                    </section>
+                </section>
+
+                <footer class="page-footer">CSEpateltanish.github.io/csce242/</footer>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

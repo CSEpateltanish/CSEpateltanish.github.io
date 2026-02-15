@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #eef1f6;
+    color: #0b1f3a;
+    font-family: Arial, sans-serif;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+.page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 24px 48px;
+}
+
+.assignment-card {
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 26px 24px 30px;
+    background: #f7f9fd;
+    border: 2px solid #c7d4ea;
+    border-radius: 16px;
+}
+
+.panel-dots {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    color: #8fa4c5;
+    font-size: 20px;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.page-header h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #0b2d66;
+}
+
+.page-header h2 {
+    font-size: 28px;
+    margin: 8px 0 0;
+    color: #1d4f9b;
+    font-weight: 600;
+}
+
+.exercise-nav {
+    margin-bottom: 18px;
+}
+
+.toggle-nav {
+    border: 0;
+    background: transparent;
+    color: #0b2d66;
+    font-size: 22px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.exercise-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.exercise-link {
+    border: 0;
+    background: transparent;
+    color: #1d4f9b;
+    font-size: 22px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.exercise-link:hover {
+    color: #0b2d66;
+}
+
+.exercise-link.is-active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.content-panel {
+    border: 2px solid #c7d4ea;
+    border-radius: 14px;
+    background: #ffffff;
+    min-height: 260px;
+    padding: 28px 22px 24px;
+}
+
+.exercise-view {
+    text-align: center;
+}
+
+.exercise-view h3 {
+    margin: 0 0 14px;
+    color: #0b2d66;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.slider-row {
+    display: flex;
+    justify-content: center;
+    margin: 8px 0 14px;
+}
+
+#minutes-slider {
+    width: 260px;
+    max-width: 100%;
+}
+
+.value-text {
+    margin: 0;
+    color: #0b2d66;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.message-text {
+    margin: 14px auto 0;
+    max-width: 760px;
+    color: #0b2d66;
+    font-size: 22px;
+    line-height: 1.35;
+}
+
+.page-footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #0b2d66;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+.hide-small {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .toggle-nav {
+        display: none;
+    }
+
+    .exercise-nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .exercise-list,
+    .exercise-list.hide-small {
+        display: flex;
+        align-items: center;
+    }
+
+    .exercise-list li {
+        display: flex;
+        align-items: center;
+    }
+
+    .exercise-list li:not(:last-child)::after {
+        content: "|";
+        margin: 0 10px;
+        color: #1d4f9b;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .page {
+        padding: 26px 14px 32px;
+    }
+
+    .assignment-card {
+        padding: 20px 14px 22px;
+    }
+
+    .page-header h1 {
+        font-size: 40px;
+    }
+
+    .page-header h2 {
+        font-size: 24px;
+    }
+
+    .exercise-list {
+        padding-left: 8px;
+    }
+
+    .exercise-list li + li {
+        margin-top: 10px;
+    }
+
+    .exercise-link {
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .exercise-view h3 {
+        font-size: 28px;
+    }
+
+    .value-text {
+        font-size: 22px;
+    }
+
+    .message-text {
+        font-size: 20px;
+    }
+
+    .page-footer {
+        font-size: 22px;
+    }
+}
