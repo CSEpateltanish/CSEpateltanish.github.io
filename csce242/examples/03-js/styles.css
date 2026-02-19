@@ -56,6 +56,10 @@ img {
     max-width:40%;
 }
 
+#movie {
+    width:100%;
+}
+
 /* Gallery */
 #gallery section {
     background:#edf6f9;
@@ -81,6 +85,20 @@ button {
 button:disabled {
     background:gray;
 }
+/* Tables */
+table{
+    border-collapse: collapse;
+}
+table th, table td {
+    padding: 5px;
+    border: 1px solid darkslategray;
+}
+
+table th {
+    background-color: #05668d;
+    color: white;
+}
+
 
 /* Navigation */
 #toggle-nav {
