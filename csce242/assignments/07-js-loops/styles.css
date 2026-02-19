@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Base styling */
+body {
+    margin: 0;
+    background: #eef1f6;
+    color: #0b1f3a;
+    font-family: Arial, sans-serif;
+}
+
+/* Page layout */
+.page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 24px 48px;
+}
+
+/* Main card */
+.assignment-card {
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 26px 24px 30px;
+    background: #f7f9fd;
+    border: 2px solid #c7d4ea;
+    border-radius: 16px;
+}
+
+/* Title styling */
+.page-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.page-header h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #0b2d66;
+}
+
+.page-header h2 {
+    font-size: 28px;
+    margin: 8px 0 0;
+    color: #1d4f9b;
+    font-weight: 600;
+}
+
+/* Tank stage */
+.tank-stage {
+    width: min(760px, 100%);
+    margin: 0 auto;
+    background: #e9e1dc;
+    border: 2px solid #d3c9c3;
+    padding: 22px 24px 12px;
+    border-radius: 2px;
+}
+
+/* Fish tank bowl */
+.fish-tank {
+    position: relative;
+    width: min(620px, 100%);
+    margin: 0 auto;
+    padding-top: 44px;
+}
+
+.tank-rim {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 86%;
+    height: 70px;
+    border-radius: 50%;
+    border: 7px solid rgba(255, 255, 255, 0.44);
+    background: rgba(255, 255, 255, 0.14);
+    z-index: 3;
+}
+
+.tank-body {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 0.86;
+    margin: 0 auto;
+    border-radius: 44% 44% 48% 48% / 36% 36% 56% 56%;
+    border: 9px solid rgba(255, 255, 255, 0.52);
+    background: radial-gradient(
+        circle at 25% 12%,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.06) 42%,
+        rgba(255, 255, 255, 0.2) 100%
+    );
+    overflow: hidden;
+}
+
+.tank-body::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 18px;
+    width: 44%;
+    height: 56%;
+    border-radius: 48% 52% 52% 48%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.36), rgba(255, 255, 255, 0));
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* CSS art for bowl built from scratch with gradients and border-radius shaping */
+.water {
+    position: absolute;
+    left: 4.8%;
+    right: 4.8%;
+    bottom: 4.8%;
+    height: 80%;
+    border-radius: 48% 48% 47% 47% / 38% 38% 57% 57%;
+    background: radial-gradient(
+        circle at 50% 18%,
+        #79c7f3 0%,
+        #53b0e7 36%,
+        #3da0d9 62%,
+        #3898cf 100%
+    );
+    overflow: hidden;
+}
+
+.water::before {
+    content: "";
+    position: absolute;
+    left: -3%;
+    right: -3%;
+    top: -14%;
+    height: 34%;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.04));
+}
+
+/* Bubble animation */
+.bubble {
+    position: absolute;
+    bottom: -36px;
+    border-radius: 50%;
+    background: rgba(209, 242, 255, 0.72);
+    box-shadow: inset -3px -3px 6px rgba(130, 190, 225, 0.54);
+    animation: bubble-rise var(--rise-duration) linear var(--rise-delay) infinite;
+}
+
+@keyframes bubble-rise {
+    0% {
+        transform: translateY(0) scale(0.35);
+        opacity: 0;
+    }
+
+    12% {
+        opacity: 0.85;
+    }
+
+    85% {
+        opacity: 0.58;
+    }
+
+    100% {
+        transform: translate(var(--drift-x), -470px) scale(1);
+        opacity: 0;
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 767px) {
+    .page {
+        padding: 26px 14px 32px;
+    }
+
+    .assignment-card {
+        padding: 20px 14px 22px;
+    }
+
+    .page-header h1 {
+        font-size: 40px;
+    }
+
+    .page-header h2 {
+        font-size: 24px;
+    }
+
+    .tank-stage {
+        padding: 14px 12px 8px;
+    }
+
+    .fish-tank {
+        padding-top: 34px;
+    }
+
+    .tank-rim {
+        height: 56px;
+        border-width: 5px;
+    }
+
+    @keyframes bubble-rise {
+        0% {
+            transform: translateY(0) scale(0.35);
+            opacity: 0;
+        }
+
+        12% {
+            opacity: 0.85;
+        }
+
+        85% {
+            opacity: 0.58;
+        }
+
+        100% {
+            transform: translate(var(--drift-x), -320px) scale(1);
+            opacity: 0;
+        }
+    }
+}
