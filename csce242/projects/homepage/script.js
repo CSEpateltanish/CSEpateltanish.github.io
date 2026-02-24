@@ -1,53 +1,27 @@
-/* Button and gallery element references */
-const allButton = document.getElementById("btn-all");
-const landscapeButton = document.getElementById("btn-landscape");
-const urbanButton = document.getElementById("btn-urban");
-const portraitButton = document.getElementById("btn-portrait");
-const filterButtons = document.querySelectorAll(".filter-button");
-const galleryBoxes = document.querySelectorAll(".gallery-box");
+document.querySelectorAll(".genre-row").forEach((row) => {
+  const images = Array.from(row.querySelectorAll(".slides img"));
+  let currentIndex = images.findIndex((image) => !image.classList.contains("hidden"));
 
-/* Keep the clicked filter button visually active */
-const setActiveButton = (activeButton) => {
-  filterButtons.forEach((button) => {
-    button.classList.remove("is-active");
-  });
-  activeButton.classList.add("is-active");
-};
+  if (currentIndex === -1) {
+    currentIndex = 0;
+    images.forEach((image, index) => {
+      image.classList.toggle("hidden", index !== 0);
+    });
+  }
 
-/* Show all boxes or only boxes matching one category class */
-const showAll = () => {
-  galleryBoxes.forEach((box) => {
-    box.style.display = "block";
-  });
-};
+  const showImage = (nextIndex) => {
+    images[currentIndex].classList.add("hidden");
+    images[nextIndex].classList.remove("hidden");
+    currentIndex = nextIndex;
+  };
 
-const showCategory = (categoryClass) => {
-  galleryBoxes.forEach((box) => {
-    if (box.classList.contains(categoryClass)) {
-      box.style.display = "block";
-    } else {
-      box.style.display = "none";
-    }
-  });
-};
+  row.querySelector(".arrow-next").onclick = () => {
+    const nextIndex = (currentIndex + 1) % images.length;
+    showImage(nextIndex);
+  };
 
-/* Click actions for each filter button */
-allButton.onclick = () => {
-  setActiveButton(allButton);
-  showAll();
-};
-
-landscapeButton.onclick = () => {
-  setActiveButton(landscapeButton);
-  showCategory("landscape");
-};
-
-urbanButton.onclick = () => {
-  setActiveButton(urbanButton);
-  showCategory("urban");
-};
-
-portraitButton.onclick = () => {
-  setActiveButton(portraitButton);
-  showCategory("portrait");
-};
+  row.querySelector(".arrow-prev").onclick = () => {
+    const nextIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(nextIndex);
+  };
+});

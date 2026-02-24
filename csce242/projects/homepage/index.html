@@ -16,13 +16,22 @@
       </div>
 
       <nav class="main-nav">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#about">About</a>
-        <a href="#home">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
       </nav>
     </header>
 
     <main>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="hero-description">
+            Student photographer based in the Southeast, capturing nature, cityscapes,
+            and moments that catch the eye.
+          </p>
+        </div>
+      </section>
+
       <!-- Gallery section -->
       <section class="gallery-section" id="portfolio">
         <h2>Photography Gallery</h2>
@@ -32,47 +41,72 @@
           that may catch the eyes.
         </p>
 
-        <div class="filter-bar">
-          <button class="filter-button is-active" id="btn-all" type="button">All</button>
-          <button class="filter-button" id="btn-landscape" type="button">Landscape</button>
-          <button class="filter-button" id="btn-urban" type="button">Urban</button>
-          <button class="filter-button" id="btn-portrait" type="button">Portrait</button>
+        <div class="genre-list">
+          <section class="genre-row">
+            <div class="genre-copy">
+              <h3>Landscape</h3>
+              <p>
+                Natural scenes focused on texture, light, and quiet details across rivers,
+                trails, and open spaces.
+              </p>
+            </div>
+
+            <div class="genre-slideshow">
+              <div class="slides">
+                <button class="slide-button arrow-prev" type="button">&lt;</button>
+                <button class="slide-button arrow-next" type="button">&gt;</button>
+                <img src="images/photos/landscape/River_rocks.jpeg" alt="River rocks landscape photo">
+                <img src="images/photos/landscape/Leaves.jpeg" alt="Leaves landscape photo" class="hidden">
+                <img src="images/photos/landscape/Train.jpeg" alt="Train landscape photo" class="hidden">
+              </div>
+            </div>
+          </section>
+
+          <section class="genre-row">
+            <div class="genre-copy">
+              <h3>Urban</h3>
+              <p>
+                City-focused photography capturing movement, architecture, cars, and the
+                energy of street scenes.
+              </p>
+            </div>
+
+            <div class="genre-slideshow">
+              <div class="slides">
+                <button class="slide-button arrow-prev" type="button">&lt;</button>
+                <button class="slide-button arrow-next" type="button">&gt;</button>
+                <img src="images/photos/urban/Toronto.jpeg" alt="Toronto urban photo">
+                <img src="images/photos/urban/GTR.jpeg" alt="Car urban photo" class="hidden">
+                <img src="images/photos/urban/D3CDA060-869B-4C09-81CB-EFBE82F7540F_1_105_c.jpeg" alt="Street urban photo" class="hidden">
+              </div>
+            </div>
+          </section>
+
+          <section class="genre-row">
+            <div class="genre-copy">
+              <h3>Portrait</h3>
+              <p>
+                Portrait work centered on expression, colors,
+                pets, and personal moments.
+              </p>
+            </div>
+
+            <div class="genre-slideshow">
+              <div class="slides">
+                <button class="slide-button arrow-prev" type="button">&lt;</button>
+                <button class="slide-button arrow-next" type="button">&gt;</button>
+                <img src="images/photos/portrait/Coco.jpeg" alt="Portrait photo of Coco">
+                <img src="images/photos/portrait/dog.jpg" alt="Dog portrait photo" class="hidden">
+                <img src="images/photos/portrait/giraffe.jpg" alt="Giraffe portrait photo" class="hidden">
+              </div>
+            </div>
+          </section>
         </div>
 
-        <div class="gallery-grid">
-          <div class="gallery-box landscape">
-            <img src="images/photos/landscape/River_rocks.jpeg" alt="Landscape photo 1">
-          </div>
-          <div class="gallery-box urban">
-            <img src="images/photos/urban/Toronto.jpeg" alt="Urban photo 1">
-          </div>
-          <div class="gallery-box portrait">
-            <img src="images/photos/portrait/Coco.jpeg" alt="Portrait photo 1">
-          </div>
-          <div class="gallery-box landscape">
-            <img src="images/photos/landscape/Leaves.jpeg" alt="Landscape photo 2">
-          </div>
-          <div class="gallery-box urban">
-            <img src="images/photos/urban/GTR.jpeg" alt="Urban photo 2">
-          </div>
-          <div class="gallery-box portrait">
-            <img src="images/photos/portrait/Ocean_Sunset.jpeg" alt="Portrait photo 2">
-          </div>
-          <div class="gallery-box landscape">
-            <img src="images/photos/landscape/Train.jpeg" alt="Landscape photo 3">
-          </div>
-          <div class="gallery-box urban">
-            <img src="images/photos/urban/D3CDA060-869B-4C09-81CB-EFBE82F7540F_1_105_c.jpeg" alt="Urban photo 3">
-          </div>
-          <div class="gallery-box portrait">
-            <img src="images/photos/portrait/Cherry_blossoms.jpeg" alt="Portrait photo 3">
-          </div>
-        </div>
-
-        <a class="portfolio-button" href="#portfolio">Portfolio</a>
+        <a class="portfolio-button" href="portfolio.html">View Portfolio</a>
 
         <p class="portfolio-note">
-          (If you're interested in downloading any images, you may do so by going to my portfolio!)
+          (If you're interested in downloading any images, you may do so by going to my portfolio)
         </p>
       </section>
 
