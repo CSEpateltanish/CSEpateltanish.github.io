@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-page: #eef1f6;
+    --bg-card: #f7f9fd;
+    --bg-white: #ffffff;
+    --blue-900: #0b2d66;
+    --blue-700: #1d4f9b;
+    --blue-600: #3b63b3;
+    --blue-500: #4f6eb8;
+    --blue-100: #dfe8f7;
+    --border: #c7d4ea;
+    --shadow: rgba(11, 31, 58, 0.15);
+}
+
+body {
+    margin: 0;
+    background: var(--bg-page);
+    color: #0b1f3a;
+    font-family: Arial, sans-serif;
+}
+
+button,
+iframe {
+    font-family: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 24px 48px;
+}
+
+.assignment-card {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 26px 24px 30px;
+    background: var(--bg-card);
+    border: 2px solid var(--border);
+    border-radius: 16px;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 48px;
+    color: var(--blue-900);
+}
+
+.page-header h2 {
+    margin: 8px 0 0;
+    font-size: 28px;
+    color: var(--blue-700);
+    font-weight: 600;
+}
+
+.music-stage {
+    width: min(900px, 100%);
+    margin: 0 auto;
+    background: var(--bg-white);
+    border: 2px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 18px 18px;
+}
+
+.music-stage h3 {
+    margin: 0;
+    text-align: center;
+    color: var(--blue-700);
+    font-size: 26px;
+}
+
+.stage-copy {
+    margin: 8px 0 16px;
+    text-align: center;
+    color: var(--blue-900);
+}
+
+.song-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.song-card {
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--bg-white);
+}
+
+.song-button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+}
+
+.song-button:focus-visible {
+    outline: 3px solid var(--blue-700);
+    outline-offset: -3px;
+}
+
+.song-card-header {
+    background: var(--blue-500);
+    color: #ffffff;
+    padding: 14px 14px 12px;
+    text-align: center;
+    min-height: 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.song-card-header h4 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.song-card-header p {
+    margin: 8px 0 0;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.95;
+}
+
+.song-cover {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.page-footer {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--blue-900);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.w3-modal {
+    padding: 18px;
+    background: rgba(10, 20, 40, 0.62);
+}
+
+.w3-modal-content {
+    width: min(920px, 100%);
+    margin: 0 auto;
+    border: 2px solid var(--border);
+    border-radius: 14px;
+    background: var(--bg-white);
+    box-shadow: 0 20px 40px var(--shadow);
+    overflow: hidden;
+}
+
+.modal-shell {
+    padding: 18px;
+}
+
+.close-modal.w3-button {
+    top: 8px;
+    right: 8px;
+    width: 38px;
+    height: 38px;
+    border: 2px solid var(--border);
+    border-radius: 50%;
+    background: #ffffff;
+    color: var(--blue-700);
+    font-size: 26px;
+    line-height: 1;
+    padding: 0;
+}
+
+.close-modal.w3-button:hover,
+.close-modal.w3-button:focus {
+    background: #f1f5fc !important;
+    color: var(--blue-900) !important;
+}
+
+.close-modal.w3-button:focus-visible {
+    outline: 3px solid var(--blue-700);
+    outline-offset: 2px;
+}
+
+.modal-layout {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 18px;
+    align-items: start;
+}
+
+.modal-video iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 0;
+    border-radius: 10px;
+}
+
+.modal-details {
+    background: #f5f8ff;
+    border: 2px solid var(--blue-100);
+    border-radius: 10px;
+    padding: 14px 14px 10px;
+}
+
+.modal-details h3 {
+    margin: 0;
+    color: var(--blue-700);
+    font-size: 28px;
+    line-height: 1.15;
+}
+
+.modal-artist {
+    margin: 10px 0 14px;
+    color: var(--blue-900);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.modal-info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-info li {
+    padding: 8px 0;
+    border-top: 1px solid var(--blue-100);
+    color: var(--blue-900);
+}
+
+.modal-info li:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.modal-info strong {
+    color: var(--blue-700);
+}
+
+@media (max-width: 767px) {
+    .page {
+        padding: 26px 14px 32px;
+    }
+
+    .assignment-card {
+        padding: 20px 14px 22px;
+    }
+
+    .page-header h1 {
+        font-size: 40px;
+    }
+
+    .page-header h2 {
+        font-size: 24px;
+    }
+
+    .music-stage {
+        padding: 16px 12px 12px;
+    }
+
+    .music-stage h3 {
+        font-size: 22px;
+    }
+
+    .stage-copy {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .song-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .song-card-header {
+        min-height: 86px;
+        padding: 12px;
+    }
+
+    .song-card-header h4 {
+        font-size: 21px;
+    }
+
+    .page-footer {
+        font-size: 22px;
+    }
+
+    .w3-modal {
+        padding: 10px;
+    }
+
+    .modal-shell {
+        padding: 14px 12px 12px;
+    }
+
+    .modal-layout {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .modal-details h3 {
+        font-size: 24px;
+    }
+}

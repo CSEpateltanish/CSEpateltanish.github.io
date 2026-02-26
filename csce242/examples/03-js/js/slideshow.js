@@ -1,6 +1,6 @@
 document.getElementById("arrow-next").onclick = (e) => {
     e.preventDefault();
-    const currentImage = document.querySelector("#slideshow img:not(.hidden)");
+    const currentImage = getCurrentSlide;
     let nextImage = currentImage.nextElementSibling;
 
     if(nextImage == null){
@@ -8,7 +8,31 @@ document.getElementById("arrow-next").onclick = (e) => {
 
     }
 
-    currentImage.classList.add("hidden");
-    nextImage.classList.remove("hidden");
+    slide (currentImage, nextImage);
 
 };
+
+document.getElementById("arrow-prev").onclick = (e) => {
+    e.preventDefault();
+    const currentImage = getCurrentSlide;
+    let prevImage = currentImage.previousElementSibling;
+
+    if(prevImage == null){
+        prevImage = document.querySelector("#slideshow img:last-child");
+
+    }
+
+    slide (currentImage, prevImage);
+
+};
+
+//get current image
+const getCurrentSlide = () => {
+   return document.querySelector("#slideshow img:not(.hidden)");
+};
+
+//slide 
+const slide = (current, next) => {
+    current.classList.add("hidden");
+    next.classList.remove("hidden");
+}
