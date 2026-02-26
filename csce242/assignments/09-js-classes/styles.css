@@ -2,22 +2,9 @@
     box-sizing: border-box;
 }
 
-:root {
-    --bg-page: #eef1f6;
-    --bg-card: #f7f9fd;
-    --bg-white: #ffffff;
-    --blue-900: #0b2d66;
-    --blue-700: #1d4f9b;
-    --blue-600: #3b63b3;
-    --blue-500: #4f6eb8;
-    --blue-100: #dfe8f7;
-    --border: #c7d4ea;
-    --shadow: rgba(11, 31, 58, 0.15);
-}
-
 body {
     margin: 0;
-    background: var(--bg-page);
+    background: #eef1f6;
     color: #0b1f3a;
     font-family: Arial, sans-serif;
 }
@@ -32,6 +19,11 @@ img {
     display: block;
 }
 
+a,
+select {
+    font-family: inherit;
+}
+
 .page {
     max-width: 1100px;
     margin: 0 auto;
@@ -39,11 +31,12 @@ img {
 }
 
 .assignment-card {
+    position: relative;
     max-width: 980px;
     margin: 0 auto;
     padding: 26px 24px 30px;
-    background: var(--bg-card);
-    border: 2px solid var(--border);
+    background: #f7f9fd;
+    border: 2px solid #c7d4ea;
     border-radius: 16px;
 }
 
@@ -53,38 +46,39 @@ img {
 }
 
 .page-header h1 {
-    margin: 0;
     font-size: 48px;
-    color: var(--blue-900);
+    font-weight: 600;
+    margin: 0;
+    color: #0b2d66;
 }
 
 .page-header h2 {
-    margin: 8px 0 0;
     font-size: 28px;
-    color: var(--blue-700);
+    margin: 8px 0 0;
+    color: #1d4f9b;
     font-weight: 600;
 }
 
 .music-stage {
-    width: min(900px, 100%);
+    width: min(860px, 100%);
     margin: 0 auto;
-    background: var(--bg-white);
-    border: 2px solid var(--border);
+    background: #ffffff;
+    border: 2px solid #c7d4ea;
+    padding: 26px 22px 18px;
     border-radius: 14px;
-    padding: 20px 18px 18px;
 }
 
 .music-stage h3 {
     margin: 0;
     text-align: center;
-    color: var(--blue-700);
+    color: #1d4f9b;
     font-size: 26px;
 }
 
 .stage-copy {
     margin: 8px 0 16px;
     text-align: center;
-    color: var(--blue-900);
+    color: #0b2d66;
 }
 
 .song-grid {
@@ -94,10 +88,10 @@ img {
 }
 
 .song-card {
-    border: 2px solid var(--border);
+    border: 2px solid #c7d4ea;
     border-radius: 12px;
     overflow: hidden;
-    background: var(--bg-white);
+    background: #ffffff;
 }
 
 .song-button {
@@ -110,13 +104,8 @@ img {
     cursor: pointer;
 }
 
-.song-button:focus-visible {
-    outline: 3px solid var(--blue-700);
-    outline-offset: -3px;
-}
-
 .song-card-header {
-    background: var(--blue-500);
+    background: #4f6eb8;
     color: #ffffff;
     padding: 14px 14px 12px;
     text-align: center;
@@ -146,14 +135,6 @@ img {
     object-fit: cover;
 }
 
-.page-footer {
-    margin-top: 20px;
-    text-align: center;
-    color: var(--blue-900);
-    font-weight: 600;
-    font-size: 24px;
-}
-
 .w3-modal {
     padding: 18px;
     background: rgba(10, 20, 40, 0.62);
@@ -162,10 +143,10 @@ img {
 .w3-modal-content {
     width: min(920px, 100%);
     margin: 0 auto;
-    border: 2px solid var(--border);
+    border: 2px solid #c7d4ea;
     border-radius: 14px;
-    background: var(--bg-white);
-    box-shadow: 0 20px 40px var(--shadow);
+    background: #ffffff;
+    box-shadow: 0 20px 40px rgba(11, 31, 58, 0.15);
     overflow: hidden;
 }
 
@@ -178,10 +159,10 @@ img {
     right: 8px;
     width: 38px;
     height: 38px;
-    border: 2px solid var(--border);
+    border: 2px solid #c7d4ea;
     border-radius: 50%;
     background: #ffffff;
-    color: var(--blue-700);
+    color: #1d4f9b;
     font-size: 26px;
     line-height: 1;
     padding: 0;
@@ -190,12 +171,7 @@ img {
 .close-modal.w3-button:hover,
 .close-modal.w3-button:focus {
     background: #f1f5fc !important;
-    color: var(--blue-900) !important;
-}
-
-.close-modal.w3-button:focus-visible {
-    outline: 3px solid var(--blue-700);
-    outline-offset: 2px;
+    color: #0b2d66 !important;
 }
 
 .modal-layout {
@@ -216,21 +192,21 @@ img {
 
 .modal-details {
     background: #f5f8ff;
-    border: 2px solid var(--blue-100);
+    border: 2px solid #dfe8f7;
     border-radius: 10px;
     padding: 14px 14px 10px;
 }
 
 .modal-details h3 {
     margin: 0;
-    color: var(--blue-700);
+    color: #1d4f9b;
     font-size: 28px;
     line-height: 1.15;
 }
 
 .modal-artist {
     margin: 10px 0 14px;
-    color: var(--blue-900);
+    color: #0b2d66;
     font-size: 18px;
     font-weight: 600;
 }
@@ -243,8 +219,8 @@ img {
 
 .modal-info li {
     padding: 8px 0;
-    border-top: 1px solid var(--blue-100);
-    color: var(--blue-900);
+    border-top: 1px solid #dfe8f7;
+    color: #0b2d66;
 }
 
 .modal-info li:first-child {
@@ -253,7 +229,96 @@ img {
 }
 
 .modal-info strong {
-    color: var(--blue-700);
+    color: #1d4f9b;
+}
+
+.music-panel {
+    width: min(760px, 100%);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mood-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.mood-row label {
+    color: #0b2d66;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#mood-select {
+    min-width: 140px;
+    padding: 7px 10px;
+    border: 2px solid #c7d4ea;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #0b2d66;
+    font-size: 22px;
+}
+
+.song-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-height: 210px;
+}
+
+.song-links li + li {
+    margin-top: 16px;
+}
+
+.song-links a {
+    color: #1d4f9b;
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    line-height: 1.35;
+}
+
+.song-links a:hover {
+    color: #0b2d66;
+}
+
+.video-wrap {
+    width: min(640px, 100%);
+    margin: 22px auto 0;
+}
+
+.video-wrap iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 0;
+}
+
+.pending-embed {
+    margin: 0;
+    padding: 16px;
+    border: 2px solid #c7d4ea;
+    background: #ffffff;
+    color: #0b2d66;
+    text-align: center;
+}
+
+.page-footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #0b2d66;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.hidden {
+    display: none;
 }
 
 @media (max-width: 767px) {
@@ -300,10 +365,6 @@ img {
         font-size: 21px;
     }
 
-    .page-footer {
-        font-size: 22px;
-    }
-
     .w3-modal {
         padding: 10px;
     }
@@ -319,5 +380,26 @@ img {
 
     .modal-details h3 {
         font-size: 24px;
+    }
+
+    .mood-row label,
+    #mood-select {
+        font-size: 18px;
+    }
+
+    #mood-select {
+        min-width: 118px;
+    }
+
+    .song-links {
+        min-height: 0;
+    }
+
+    .song-links a {
+        font-size: 16px;
+    }
+
+    .page-footer {
+        font-size: 22px;
     }
 }
