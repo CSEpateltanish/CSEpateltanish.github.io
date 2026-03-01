@@ -113,12 +113,12 @@ photoDetails["urban-gvl"] = {
     description: "A downtown moment focused on the color and pace of the local streets of Greenville, SC."
 };
 photoDetails["urban-willyb"] = {
-    title: "Bridge",
+    title: "Williams Brice",
     image: "images/photos/urban/WillyB.jpeg",
-    date: "May 4, 2018",
+    date: "November 4, 2024",
     location: "Cincinnati, Ohio",
-    camera: "Canon EOS Rebel T7",
-    description: "Bridge structure and surrounding captured as a strong urban landmark shot in downtown Cincinnati."
+    camera: "iPhone 16 Pro Max",
+    description: "Williams Brice in action during a UofSC classic, Sandstorm."
 };
 photoDetails["portrait-capecod"] = {
     title: "Cape",
