@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Detail | Through My Lens</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-frame">
+    <header class="topbar">
+      <div class="brand">
+        <img class="camera-icon" src="images/icons/camera_icon.jpeg" alt="Camera icon">
+        <h1 class="brand-title">Through My Lens <span>| Tanish Patel</span></h1>
+      </div>
+
+      <button class="nav-toggle" type="button">Menu</button>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="photo-detail-page">
+      <section class="photo-detail-layout">
+        <a class="photo-back-link" href="portfolio.html">&larr; Back to Portfolio</a>
+
+        <div class="photo-detail-frame">
+          <img id="detail-photo" src="" alt="">
+        </div>
+
+        <h2 id="detail-title">Photo Detail</h2>
+        <div class="photo-detail-info">
+          <p><strong>Date Taken:</strong> <span id="detail-date">--</span></p>
+          <p><strong>Location:</strong> <span id="detail-location">--</span></p>
+          <p><strong>Camera:</strong> <span id="detail-camera">--</span></p>
+          <p><strong>Description:</strong> <span id="detail-description">--</span></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      &copy; 2026 Tanish Patel. All rights reserved.
+    </footer>
+  </div>
+
+  <script src="js/nav.js"></script>
+  <script src="js/photo.js"></script>
+</body>
+</html>
