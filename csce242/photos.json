@@ -1,0 +1,172 @@
+{
+  "photo_descriptions": [
+    {
+      "_id": 1,
+      "photo_id": "landscape-island",
+      "img_name": "images/photos/landscape/island.jpeg",
+      "category": "landscape",
+      "alt_text": "Island landscape photo",
+      "photo_description": "A calm shoreline that highlights the texture of coastal rocks and water."
+    },
+    {
+      "_id": 2,
+      "photo_id": "landscape-waterfall",
+      "img_name": "images/photos/landscape/waterfall.jpeg",
+      "category": "landscape",
+      "alt_text": "Waterfall landscape photo",
+      "photo_description": "Moving water framed with natural rock detail and soft light."
+    },
+    {
+      "_id": 3,
+      "photo_id": "landscape-leaves",
+      "img_name": "images/photos/landscape/Leaves.jpeg",
+      "category": "landscape",
+      "alt_text": "Leaves landscape photo",
+      "photo_description": "Fall colors and leaf texture focused to create a close natural composition."
+    },
+    {
+      "_id": 4,
+      "photo_id": "landscape-mountains",
+      "img_name": "images/photos/landscape/NC_Mountains.jpeg",
+      "category": "landscape",
+      "alt_text": "North Carolina mountains landscape photo",
+      "photo_description": "Wide mountain framing that emphasizes depth, layers, and haze across the range."
+    },
+    {
+      "_id": 5,
+      "photo_id": "landscape-ocean",
+      "img_name": "images/photos/landscape/Ocean.jpeg",
+      "category": "landscape",
+      "alt_text": "Ocean landscape photo",
+      "photo_description": "Open ocean lines and horizon with a clean, minimal landscape feel."
+    },
+    {
+      "_id": 6,
+      "photo_id": "landscape-reedy",
+      "img_name": "images/photos/landscape/ReedyRiver.jpeg",
+      "category": "landscape",
+      "alt_text": "Reedy River landscape photo",
+      "photo_description": "Reedy River in downtown Greenville, one of my personal favorites."
+    },
+    {
+      "_id": 7,
+      "photo_id": "landscape-river",
+      "img_name": "images/photos/landscape/River_rocks.jpeg",
+      "category": "landscape",
+      "alt_text": "River rocks landscape photo",
+      "photo_description": "Flowing water around rocks to show natural patterns and motion in one frame."
+    },
+    {
+      "_id": 8,
+      "photo_id": "landscape-train",
+      "img_name": "images/photos/landscape/Train.jpeg",
+      "category": "landscape",
+      "alt_text": "Train landscape photo",
+      "photo_description": "Train blowing steam as it climbs to over 6000 feet of elevation."
+    },
+    {
+      "_id": 9,
+      "photo_id": "urban-miami",
+      "img_name": "images/photos/urban/Miami.jpeg",
+      "category": "urban",
+      "alt_text": "Miami urban photo",
+      "photo_description": "Urban architecture and street energy combined in a clean, modern city shot."
+    },
+    {
+      "_id": 10,
+      "photo_id": "urban-miami2",
+      "img_name": "images/photos/urban/Miami_2.jpeg",
+      "category": "urban",
+      "alt_text": "Miami urban photo 2",
+      "photo_description": "Bayside perspective focused on contrast between the boardwalk and sky in Miami."
+    },
+    {
+      "_id": 11,
+      "photo_id": "urban-cola",
+      "img_name": "images/photos/urban/cola.jpg",
+      "category": "urban",
+      "alt_text": "Columbia urban photo",
+      "photo_description": "Street-level composition showing city rhythm, people flow, and structure."
+    },
+    {
+      "_id": 12,
+      "photo_id": "urban-toronto",
+      "img_name": "images/photos/urban/Toronto.jpeg",
+      "category": "urban",
+      "alt_text": "Toronto urban photo",
+      "photo_description": "Tall architecture and perspective lines that emphasize scale."
+    },
+    {
+      "_id": 13,
+      "photo_id": "urban-gvl",
+      "img_name": "images/photos/urban/gvl.jpg",
+      "category": "urban",
+      "alt_text": "Greenville urban photo",
+      "photo_description": "A downtown moment focused on the color and pace of local Greenville streets."
+    },
+    {
+      "_id": 14,
+      "photo_id": "urban-willyb",
+      "img_name": "images/photos/urban/WillyB.jpeg",
+      "category": "urban",
+      "alt_text": "Williams Brice Stadium photo",
+      "photo_description": "Williams Brice in action during a UofSC classic, Sandstorm."
+    },
+    {
+      "_id": 15,
+      "photo_id": "portrait-capecod",
+      "img_name": "images/photos/portrait/Cape_cod.jpeg",
+      "category": "portrait",
+      "alt_text": "Cape Cod portrait photo",
+      "photo_description": "Portrait composition using natural light and a coastal background in Cape Cod."
+    },
+    {
+      "_id": 16,
+      "photo_id": "portrait-ceremony",
+      "img_name": "images/photos/portrait/Ceremony.jpeg",
+      "category": "portrait",
+      "alt_text": "Ceremony portrait photo",
+      "photo_description": "A candid portrait moment captured during a baby shower."
+    },
+    {
+      "_id": 17,
+      "photo_id": "portrait-bird",
+      "img_name": "images/photos/portrait/bird.jpg",
+      "category": "portrait",
+      "alt_text": "Bird portrait photo",
+      "photo_description": "A wildlife portrait that isolates feather detail and expression."
+    },
+    {
+      "_id": 18,
+      "photo_id": "portrait-cincy",
+      "img_name": "images/photos/portrait/Cincy_Portrait.jpeg",
+      "category": "portrait",
+      "alt_text": "Cincinnati portrait photo",
+      "photo_description": "City portrait of my uncle and aunt in Cincinnati."
+    },
+    {
+      "_id": 19,
+      "photo_id": "portrait-graduation",
+      "img_name": "images/photos/portrait/Graduation.jpeg",
+      "category": "portrait",
+      "alt_text": "Graduation portrait photo",
+      "photo_description": "A celebratory portrait marking my sister's nursing school graduation."
+    },
+    {
+      "_id": 20,
+      "photo_id": "portrait-dog",
+      "img_name": "images/photos/portrait/dog.jpg",
+      "category": "portrait",
+      "alt_text": "Dog portrait photo",
+      "photo_description": "A close portrait of a dog with focus on expression and fur detail."
+    },
+    {
+      "_id": 21,
+      "photo_id": "portrait-giraffe",
+      "img_name": "images/photos/portrait/giraffe.jpg",
+      "category": "portrait",
+      "alt_text": "Giraffe portrait photo",
+      "photo_description": "An animal portrait framing the giraffe's posture and patterned texture."
+    }
+  ]
+}
